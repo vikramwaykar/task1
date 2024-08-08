@@ -1,0 +1,97 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color:transparent;
+    z-index: 1;
+   position: absolute;
+   width: 100%;
+   height: 100px;
+}
+.logo img{
+    margin-left: 30px;
+    height: 70px;
+} 
+.rightNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.rightNavBar div i{
+    font-size:20px ;
+}
+
+.Icon{
+    color: #ffffff;
+    display: flex;
+    width: 80px;
+    justify-content: space-evenly;
+    font-size: 40px;
+}
+.Icon i{
+    font-size: 40px;
+}
+
+.rightNavBar h1{
+    font-size: 15px;
+    font-weight: 500;
+}
+.ExploreBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100px;
+    color: white;
+}
+.LuxVillaBtn{
+    border: 2px solid #fdd5a9;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 160px;
+    color: #fdd5a9;
+    background: linear-gradient(102.2deg, #000 -.56%, #5c5c5c 50.8%, #000 106.92%, #0a0a0a 0);;
+}
+
+.ListPropertyBtn,.ContactBtn {
+    border: 2px solid #fdd5a9;
+    width: 180px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.ContactBtn{
+    font-weight: 500;
+}
+
+.ListPropertyBtn::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-10%) translateY(-42%) scale(0%);
+    transition: .7s all ease;
+    border-radius: 50%;
+}
+
+.ListPropertyBtn:hover{
+    color: #ffffff;
+}
+.ListPropertyBtn:hover::before{
+    transform: translateX(0%) translateY(-40%) scale(105%);
+}
